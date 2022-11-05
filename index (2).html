@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOP</title>
+    <style>
+        body{
+            background-color: black;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        #navitems{
+            
+            background-color: black;
+            padding: 10px;
+            /* margin-top: 10px; */
+            z-index: 2;
+            position: sticky;
+            top:0px;
+            overflow: hidden;
+            color: rgb(255, 255, 255);
+            height: 50px;
+            width:100vw;
+
+        }
+        .navbar:hover{
+            color:blueviolet;
+            text-decoration: underline;
+            
+        }
+        div>ol{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            position: sticky;
+            margin: 0px 10px;
+            justify-content: center;
+            position: relative;
+        }
+        div>ol>li{
+            position: sticky;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #logo{
+            position: sticky;
+            float: left;
+            bottom:80px;
+            top:10px;
+        }
+        #search{
+            position: sticky;
+            float: right;
+            position: relative;
+            bottom:27px; 
+            right: 80px;
+            margin-left: 10px;
+        }
+        #cart{
+            position: sticky;
+            float: right;
+            position: relative;  
+            bottom:30px;
+            /* overflow: hidden; */
+            right:80px;
+        }
+        .body{
+            top:10px;
+           
+        }
+        #bcg{
+            /* padding:50px; */
+            width:100vw;
+            height: 100vh;
+            /* margin-left: 10px; */
+        }
+        #body1{
+            position: relative;
+            bottom: 600px;
+            color: hotpink;
+            text-decoration: underline;
+        }
+        #move{
+            position: relative;
+            bottom: 550px;
+            color: white;
+            width:40vw;
+
+        }
+        #button{
+            position: absolute;
+            bottom: 60px;
+            border-radius: 20%;
+        }
+        #button:hover{
+            border-radius: 30%;
+            background-color: orange;
+        }
+        .h1{
+            margin: 10px;
+            color: orange;
+        }
+        .H1{
+            font-size: 60px;
+            color: hotpink;
+            margin-left: 43vw;
+        }
+        #about{
+            margin-top: 35px;
+            display: flex;
+            z-index: -1;
+        }
+        #bcontent{
+            width: 40vw;
+            position: relative;
+            margin-top: 10vh;
+        }
+        #bi{
+            width:40vw;
+            margin-right: 40px;
+        }
+        #bcontent>p{
+            font-size: large;
+        }
+        #bb:hover{
+            background-color:hotpink;
+            color: blueviolet;
+        }
+        #menu{
+            width: 98vw;
+            display: flex;
+            flex-direction: row;
+            padding:10px;
+        }
+        .our-menu{
+
+            width:200px;
+            height: 300px;
+            border: 2px solid orange;
+            /* display: flex;
+            flex-direction: column; */
+            width:40vw;
+             margin-left:10px;
+             margin-right: 10px;
+        }
+        .our-menu:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        .th{
+            color:hotpink;
+            padding:10px;
+            margin-left: 68px;
+        }
+        .pr{
+            color:hotpink;
+            margin-left: 8px;
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+        .pr1{
+            color:hotpink;
+            margin-left: 100px;
+        }
+        .ci{
+            border-radius: 50%;
+        }
+        .b11:hover{
+            background-color: orange;
+        }
+        .b11{
+            margin-left: 85px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navitems">
+        <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+        <span class="navbar" id="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtAS9yYVfJAxLcxSLpkgsHtdJl2E8obOKg8g&usqp=CAU" width="70px" height="44px"></span>
+        
+        <ol>
+            <li class="navbar">HOME</li>
+            <li class="navbar">ABOUT</li>
+            <li class="navbar">MENU</li>
+            <li class="navbar">CONTACTS</li>
+            <li class="navbar">BLOG</li>
+            <li class="navbar">PRODUCTS</li>
+        </ol>
+            
+            <span class="navbar" id="search"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-9zDyffPZKSSMBLwy8SVbm-80X08CSWEAsg&usqp=CAU" width="30px" height="20px"></span>
+            <span class="navbar" id="cart"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-6k0T_XnR4xJLXKTLvWn4r1xVSGSR3pAoQ&usqp=CAU" width="40px" height="30px"></span>
+            
+            
+    </div>
+    <!-- <hr> -->
+    <div id="body" style="height: 670px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcsLsBHVjo5ri3INwhHmHuklyWCILMRo1tQ&usqp=CAU" id="bcg" >
+        <h1 id="body1">Fresh coffee in the morning </h1>
+        <p id="move">ndis rem at quod reprehenderit officia. Optio, illo dicta! Eveniet illum corporis totam distinctio rem pariatur tempora fugit ullam id illo, voluptatum soluta vel tenetur quaerat nam, sunt architecto sit. Blanditiis explicabo neque expedita ad saepe, voluptatibus autem obcaecati dolor quas, et numquam odio aliquid ratione eligendi libero laborum fugiat similique nam. Ratione eligendi velit odit soluta molestias quaerat fuga, eveniet est ullam quia quasi vitae veritatis maxime illo dolor, cum cumque modi nobis nam. Rem nisi porro laudantium aliquid quibusdam saepe molestiae vel temporibus, molestias cumque possimus illum consequatur rerum exercitationem aut et minima libero necessitatibus incidunt perspiciatis omnis, ullam blanditiis totam. A sint totam necessitatibus commodi tenetur vitae quas assumenda alias rerum, suscipit ipsum, fuga, cupiditate officiis veritatis eius reprehenderit!</p>
+        <button id="button">Get Yours Now</button>
+    </div>
+
+    <h1 class="H1">About<span class="h1">Us</span></h1>
+    <div id="about">    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPHFZNfialLs8wR9RqYqtZulGOc6IOxVVlZNTrh7BIYp4qLpfQOtw2JBl2m_FVajtFzGg&usqp=CAU" id="bi">
+        <div id="bcontent">
+            <h1 style="color:aliceblue">
+                What Makes Our Coffee Special
+            </h1>
+            <p style="color: orange ;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus iusto voluptatibus sunt praesentium, voluptates dolor molestiae aliquid excepturi architecto iure illum neque ipsa ab vel! ipsum dolor sit, amet consectetur adipisicing elit. Amet minima quod quidem quam, nobis rem odit soluta, debitis ab dolorum, eligendi aliquid ex molestias et architecto nesciunt animi quia numquam veniam ea culpa non!
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi minus atque voluptates culpa asperiores illo tenetur facilis rem cumque commodi.
+            </p>
+            <button id="bb">Learn more</button>
+        </div>
+    </div>
+    <h1 class="H1">OUR<span class="h1">MENU</span></h1>
+    <div id="menu">
+        <div class="our-menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovPorxQK4eYeVyrdRsSu1YRfxDZenUGqsxQ&usqp=CAU" class="ci">
+            <span class="th">Tasty and Healthy</span>
+            <p class="pr1">$15.99 <span class="pr">20</span></p>
+            <button class="b11">Add To Cart</button>
+        </div>
+        <div class="our-menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovPorxQK4eYeVyrdRsSu1YRfxDZenUGqsxQ&usqp=CAU" class="ci">
+            <span class="th">Tasty and Healthy</span>
+            <p class="pr1">$15.99 <span class="pr">20</span></p>
+            <button class="b11">Add To Cart</button>
+        </div>
+        <div class="our-menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovPorxQK4eYeVyrdRsSu1YRfxDZenUGqsxQ&usqp=CAU" class="ci">
+            <span class="th">Tasty and Healthy</span>
+            <p class="pr1">$15.99 <span class="pr">20</span></p>
+            <button class="b11">Add To Cart</button>
+        </div>
+        <div class="our-menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovPorxQK4eYeVyrdRsSu1YRfxDZenUGqsxQ&usqp=CAU" class="ci">
+            <span class="th">Tasty and Healthy</span>
+            <p class="pr1">$15.99 <span class="pr">20</span></p>
+            <button class="b11">Add To Cart</button>
+        </div>
+        <div class="our-menu">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovPorxQK4eYeVyrdRsSu1YRfxDZenUGqsxQ&usqp=CAU" class="ci">
+            <span  class="th">Tasty and Healthy</span>
+            <p class="pr1">$15.99 <span class="pr">20</span></p>
+            <button class="b11">Add To Cart</button>
+        </div>
+    </div>
+</body>
+</html>
